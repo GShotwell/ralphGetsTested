@@ -16,7 +16,7 @@ test_that("length", {
   expect_s3_class(expected, "data.frame")
   expect_equal(dim(expected), c(1,2))
   expect_named(expected, c("correlation", "pval"))
-  expect_equal(expected[["correlation"]], 0.90, tolerance = 0.01)
+  expect_equal(expected[["correlation"]], 0.901, tolerance = 0.001)
 })
 
 
