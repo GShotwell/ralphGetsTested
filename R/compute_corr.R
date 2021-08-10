@@ -34,20 +34,4 @@ compute_corr <- function(data, var1, var2){
   return(results)
 }
 
-n_kinds_message <- function(v) {
-  sapply(v, function(x) {
-    if (x < 2) {
-      msg1 <- "is"
-      msg2 <- "kinds"
-    } else {
-      msg1 <- "are"
-      msg2 <- "kind"
-    }
-    paste("There", msg1, x, msg2, "of people in the world.")}
-  )
-}
-
-
-
-
 
